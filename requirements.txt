@@ -1,0 +1,13 @@
+requests
+tenacity
+trafilatura
+readability-lxml
+pandas
+pyarrow
+python-dateutil
+feedparser
+beautifulsoup4
+tqdm
+langid
+PyYAML
+lxml

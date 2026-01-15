@@ -1,0 +1,2 @@
+*/10 * * * * /usr/bin/env bash -lc "python /app/scripts/run_all.py >> /app/logs/harvest.log 2>&1"
+0 3 * * * /usr/bin/env bash -lc "python /app/scripts/dedupe_repair.py >> /app/logs/maintenance.log 2>&1"

@@ -1,0 +1,12 @@
+rss_sources:
+  - id: "cnbc_rss"
+    name: "CNBC Markets"
+    url: "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+
+  - id: "yh_symbols_mega1"
+    name: "Yahoo Finance (Symbols 1)"
+    url: "https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL,MSFT,GOOGL,AMZN,META,NVDA,TSLA,INTC,AMD,AVGO&region=US&lang=en-US"
+
+  - id: "yh_symbols_mega2"
+    name: "Yahoo Finance (Symbols 2)"
+    url: "https://feeds.finance.yahoo.com/rss/2.0/headline?s=JPM,BAC,WFC,C,GS,MS,BRK-B,BLK,V,MA,PYPL&region=US&lang=en-US"

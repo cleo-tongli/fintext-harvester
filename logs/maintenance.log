@@ -1,0 +1,30 @@
+TODO: implement dedupe & repair
+TODO: implement dedupe & repair
+=== 2025-08-26 ===
+Input: 1050  →  Deduped: 91  (removed: 959)
+By source (before):
+source_id
+cnbc_rss            450
+yh_symbols_mega1    300
+yh_symbols_mega2    300
+By source (after):
+source_id
+cnbc_rss            35
+yh_symbols_mega1    34
+yh_symbols_mega2    22
+Saved: /app/data/bronze/2025-08-26/docs_dedup.jsonl  &  /app/data/bronze/2025-08-26/docs_dedup.parquet
+
+=== 2025-09-02 ===
+Input: 1190  →  Deduped: 78  (removed: 1112)
+By source (before):
+source_id
+cnbc_rss            510
+yh_symbols_mega1    340
+yh_symbols_mega2    340
+By source (after):
+source_id
+cnbc_rss            31
+yh_symbols_mega1    26
+yh_symbols_mega2    21
+Saved: /app/data/bronze/2025-09-02/docs_dedup.jsonl  &  /app/data/bronze/2025-09-02/docs_dedup.parquet
+
