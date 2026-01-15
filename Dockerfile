@@ -20,7 +20,8 @@ COPY --chown=app:app requirements.txt /app/
 COPY --from=builder /wheels /wheels
 RUN pip install --no-cache-dir --user /wheels/*
 RUN mkdir -p /app/data/raw /app/data/bronze /app/logs
-RUN curl -fsSL -o /app/supercronic https://github.com/aptible/supercronic/releases/download/v0.2.30/supercronic-linux-amd64 && chmod +x /app/supercronic
+ARG TARGETARCH
+RUN curl -fsSL -o /app/supercronic "https://github.com/aptible/supercronic/releases/download/v0.2.33/supercronic-linux-${TARGETARCH}" && chmod +x /app/supercronic
 COPY --chown=app:app docker/harvest.cron /app/harvest.cron
 COPY --chown=app:app docker/healthcheck.sh /app/healthcheck.sh
 ENTRYPOINT ["/app/supercronic","-quiet","/app/harvest.cron"]
